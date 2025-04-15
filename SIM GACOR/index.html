@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katalog Produk</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#Beranda">Beranda</a></li>
+        <li><a href="#Produk">Produk</a></li>
+        <li><a href="#Pesanan">Pesanan</a></li>
+        <li><a href="#Kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="Beranda" class="section">
+      <h1>Selamat Datang di Website Kami</h1>
+      <p>Temukan berbagai pilihan furnitur berkualitas untuk rumah Anda.</p>
+    </section>
+
+    <section id="Produk" class="section">
+      <h2>Produk Kami</h2>
+      <div class="produk-list">
+        <div class="produk-item">
+          <img src="img/tempat-penyimpanan.jpg" alt="Tempat Penyimpanan" />
+          <h3>Tempat Penyimpanan</h3>
+        </div>
+        <div class="produk-item">
+          <img src="img/lemari.jpg" alt="Lemari" />
+          <h3>Lemari</h3>
+        </div>
+        <div class="produk-item">
+          <img src="img/sofa.jpg" alt="Sofa" />
+          <h3>Sofa</h3>
+        </div>
+        <div class="produk-item">
+          <img src="img/bedding.jpg" alt="Spring Bed" />
+          <h3>Spring Bed</h3>
+        </div>
+        <div class="produk-item">
+          <img src="img/kursi.jpg" alt="Kursi" />
+          <h3>Kursi</h3>
+        </div>
+        <div class="produk-item">
+          <img src="img/meja-makan.jpg" alt="Meja Makan" />
+          <h3>Meja Makan</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="Pesanan" class="section">
+      <h2>Form Pemesanan</h2>
+      <form id="orderForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="produk">Produk:</label>
+        <select id="produk" name="produk">
+          <option value="">-- Pilih Produk --</option>
+          <option value="Tempat Penyimpanan">Tempat Penyimpanan</option>
+          <option value="Lemari">Lemari</option>
+          <option value="Sofa">Sofa</option>
+          <option value="Spring Bed">Spring Bed</option>
+          <option value="Kursi">Kursi</option>
+          <option value="Meja Makan">Meja Makan</option>
+        </select>
+
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" required />
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+        <button type="submit">Pesan Sekarang</button>
+      </form>
+    </section>
+
+    <section id="Kontak" class="section">
+        <h2>Kontak Kami</h2>
+        <p>Jika ada pertanyaan atau butuh bantuan, silakan hubungi kami melalui kontak di bawah ini:</p>
+        
+        <div class="kontak-info">
+          <p><strong>Alamat:</strong> Sempaja Lestari Indah Blok L No.1</p>
+          <p><strong>Telepon:</strong> 0815-2265-0048</p>
+          <p><strong>Email:</strong> dhaniiramaa533@gmail.com</p>
+        </div>
+      
+        <h3>Kirim Pesan</h3>
+        <form id="contactForm">
+          <input type="text" id="namaKontak" placeholder="Nama Anda" required>
+          <input type="email" id="emailKontak" placeholder="Email Anda" required>
+          <textarea id="pesanKontak" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </section>
+      
+  </main>
+</body>
+</html>
